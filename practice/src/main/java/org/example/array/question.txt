@@ -1,18 +1,3 @@
-01. max of two numbers
-02. sum of 'n' natural numbers
-03. factorial of the given number
-04. swaping of two integer values
-05. prime number or not
-06. max of three numbers
-07. fib sequence
-08. trib sequence
-09. sum of 'n' natural numbers
-10. factorial of the given number
-11. swaping of two integer values
-12. prime number or not
-13. fib sequence
-14. trib sequence
-
 Arrays:
 1) Reading and Writing Array Elements
 2) Sum of all elements present in an array
