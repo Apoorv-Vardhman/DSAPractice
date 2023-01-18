@@ -1,0 +1,27 @@
+01. max of two numbers
+02. sum of 'n' natural numbers
+03. factorial of the given number
+04. swaping of two integer values
+05. prime number or not
+06. max of three numbers
+07. fib sequence
+08. trib sequence
+09. sum of 'n' natural numbers
+10. factorial of the given number
+11. swaping of two integer values
+12. prime number or not
+13. fib sequence
+14. trib sequence
+
+Arrays:
+1) Reading and Writing Array Elements
+2) Sum of all elements present in an array
+3) sum of even elements in an array
+4) sum of odd numbers
+5) sum of +ve elements in an array----------------------> if(item>=0)
+6) sum of -ve elements in an array----------------------> if(item<0)
+7) sum of elements which are ending with 3 in an array--> if(item%10==3)
+8) sum of elements which are divisible by 3 in an array-> if(item%3==0)
+9) sum of prime elements in an array--------------------> if(isprime(item))
+10) max element in an array
+11) min element in an array
