@@ -1,6 +1,5 @@
 package org.example.array;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -9,11 +8,11 @@ import java.util.Scanner;
  * @LinkedIn : apoorv-vardhman
  **/
 /*
-* 1) Reading and Writing Array Elements
+* 6) sum of -ve elements in an array----------------------> if(item<0)
 * */
-public class Program1 {
+public class Program6 {
     public static void main(String[] args) {
-        System.out.println("Enter size of array ");
+        System.out.print("Enter size ");
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
         int[] array = new int[size];
@@ -21,6 +20,12 @@ public class Program1 {
             System.out.println("enter "+(i+1)+" element ");
             array[i] = scanner.nextInt();
         }
-        System.out.println(Arrays.toString(array));
+        int sum =0;
+        for(var a: array){
+            if(a<0){
+                sum+=a;
+            }
+        }
+        System.out.printf("sum "+sum);
     }
 }

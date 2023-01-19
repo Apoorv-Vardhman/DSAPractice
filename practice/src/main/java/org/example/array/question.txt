@@ -10,3 +10,7 @@ Arrays:
 9) sum of prime elements in an array--------------------> if(isprime(item))
 10) max element in an array
 11) min element in an array
+12) sorting array elements:-
+    ~~~~~~~~~~~~~~~~~~~~~~~
+    [3, 1, 5, 2, 4] sort in asc order ----> [1, 2, 3, 4, 5]
+    [3, 1, 5, 2, 4] sort in desc order ---> [5, 4, 3, 2, 1]

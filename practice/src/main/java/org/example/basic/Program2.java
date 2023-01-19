@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @author : Apoorva Raj
- * @mailto : apoorva.raj@embedtechsolutions.com
+ * @mailto : apoorv.vardhman@gmail.com
  * @LinkedIn : apoorv-vardhman
  **/
 //02. sum of 'n' natural numbers
