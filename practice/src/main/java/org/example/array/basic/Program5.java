@@ -1,4 +1,4 @@
-package org.example.array;
+package org.example.array.basic;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ import java.util.Scanner;
  * @LinkedIn : apoorv-vardhman
  **/
 /*
-* 3) sum of even elements in an array
+* 5) sum of +ve elements in an array----------------------> if(item>=0)
 * */
-public class Program3 {
+public class Program5 {
     public static void main(String[] args) {
         System.out.print("Enter size ");
         Scanner scanner = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Program3 {
         }
         int sum =0;
         for(var a: array){
-            if(a%2==0){
+            if(a>=0){
                 sum+=a;
             }
         }

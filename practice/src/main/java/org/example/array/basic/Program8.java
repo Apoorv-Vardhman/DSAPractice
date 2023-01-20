@@ -1,4 +1,4 @@
-package org.example.array;
+package org.example.array.basic;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ import java.util.Scanner;
  * @LinkedIn : apoorv-vardhman
  **/
 /*
-* 4) sum of odd numbers
+* 8) sum of elements which are divisible by 3 in an array-> if(item%3==0)
 * */
-public class Program4 {
+public class Program8 {
     public static void main(String[] args) {
         System.out.print("Enter size ");
         Scanner scanner = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Program4 {
         }
         int sum =0;
         for(var a: array){
-            if(a%2!=0){
+            if(a%3==0){
                 sum+=a;
             }
         }

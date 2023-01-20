@@ -5,26 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d69a8f16-c848-41af-b7bb-4e6a6c5ae84a" name="Changes" comment="running notes added">
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/delete/Program22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/delete/Program23.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/delete/Program24.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/delete/Program25.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/delete/Program26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/delete/Program27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/delete/Program28.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/equality/Program15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/equality/Program16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/equality/Program17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/equality/Program18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/insert/Program19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/insert/Program20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/insert/Program21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/update/Program29.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program1.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program1.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program10.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program11.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program2.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program3.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program4.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program5.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program6.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program7.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program8.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/Program9.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/basic/Program9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/array/question.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/array/question.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program2.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program3.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program4.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program5.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program6.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program7.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program8.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/src/main/java/org/example/basic/Program8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,30 +58,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "19",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "fileTemplates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/practice/src/main/java/org/example/basic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program11">
-    <configuration name="Program10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.array.Program10" />
+  <component name="RunManager" selected="Application.Program29">
+    <configuration name="Program25" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.array.delete.Program25" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.array.*" />
+          <option name="PATTERN" value="org.example.array.delete.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Program11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.array.Program11" />
+    <configuration name="Program26" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.array.delete.Program26" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.array.*" />
+          <option name="PATTERN" value="org.example.array.delete.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Program3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.array.Program3" />
+    <configuration name="Program27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.array.delete.Program27" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.array.*" />
+          <option name="PATTERN" value="org.example.array.delete.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Program4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.array.Program4" />
+    <configuration name="Program28" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.array.delete.Program28" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.array.*" />
+          <option name="PATTERN" value="org.example.array.delete.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Program9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.array.Program9" />
+    <configuration name="Program29" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.array.update.Program29" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.array.*" />
+          <option name="PATTERN" value="org.example.array.update.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Program11" />
-        <item itemvalue="Application.Program10" />
-        <item itemvalue="Application.Program9" />
-        <item itemvalue="Application.Program4" />
-        <item itemvalue="Application.Program3" />
+        <item itemvalue="Application.Program29" />
+        <item itemvalue="Application.Program28" />
+        <item itemvalue="Application.Program26" />
+        <item itemvalue="Application.Program27" />
+        <item itemvalue="Application.Program25" />
       </list>
     </recent_temporary>
   </component>

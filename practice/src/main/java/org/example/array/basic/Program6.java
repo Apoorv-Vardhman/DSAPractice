@@ -1,4 +1,4 @@
-package org.example.array;
+package org.example.array.basic;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ import java.util.Scanner;
  * @LinkedIn : apoorv-vardhman
  **/
 /*
-* 9) sum of prime elements in an array--------------------> if(isprime(item))
+* 6) sum of -ve elements in an array----------------------> if(item<0)
 * */
-public class Program9 {
+public class Program6 {
     public static void main(String[] args) {
         System.out.print("Enter size ");
         Scanner scanner = new Scanner(System.in);
@@ -22,27 +22,10 @@ public class Program9 {
         }
         int sum =0;
         for(var a: array){
-            if(isPrime(a)){
+            if(a<0){
                 sum+=a;
             }
         }
         System.out.printf("sum "+sum);
     }
-
-    static boolean isPrime(int num){
-        if(num<=2){
-            return num==2;
-        }else{
-            boolean check = true;
-            for(int i=2;i<num;i++){
-                if(num%i==0){
-                    check = false;
-                    break;
-                }
-            }
-            return check;
-        }
-    }
-
-
 }

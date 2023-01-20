@@ -1,4 +1,4 @@
-package org.example.array;
+package org.example.array.basic;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ import java.util.Scanner;
  * @LinkedIn : apoorv-vardhman
  **/
 /*
-* 10) max element in an array
+* 7) sum of elements which are ending with 3 in an array--> if(item%10==3)
 * */
-public class Program10 {
+public class Program7 {
     public static void main(String[] args) {
         System.out.print("Enter size ");
         Scanner scanner = new Scanner(System.in);
@@ -20,12 +20,12 @@ public class Program10 {
             System.out.println("enter "+(i+1)+" element ");
             array[i] = scanner.nextInt();
         }
-        int max = array[0];
-        for (int j : array) {
-            if (max < j) {
-                max = j;
+        int sum =0;
+        for(var a: array){
+            if(a%10==3){
+                sum+=a;
             }
         }
-        System.out.printf("max "+max);
+        System.out.printf("sum "+sum);
     }
 }

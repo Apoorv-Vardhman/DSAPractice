@@ -14,3 +14,33 @@ Arrays:
     ~~~~~~~~~~~~~~~~~~~~~~~
     [3, 1, 5, 2, 4] sort in asc order ----> [1, 2, 3, 4, 5]
     [3, 1, 5, 2, 4] sort in desc order ---> [5, 4, 3, 2, 1]
+15) equality of arrays:-
+    ~~~~~~~~~~~~~~~~~~~
+    case1: by checking manually
+16)    case2: by checking manually and ignoring order
+17)    case3: by using predefined methods
+18)    case4: by using predefined methods and ignoring order
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Inserting an element into the array:-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+19) case1: inserting an element in to the first location
+20) case2: inserting an element in to the last location
+21) case3: inserting an element in to specified location
+
+deleting an element from an array:-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22) deleting an element from first location
+23) deleting an element from last location
+24) deleting an element from given location
+25) deleting all elements from an array
+26) deleting specified element from an array
+27) deleting specified element from an array first and second occurrence
+28) deleting specified element from an array in all occurrences
+
+updating element in an array:-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+29) case1: updating an element present at given location.
+30) case2: updating the given element with new element first occurrence.
+31) case3: updating the given element with new element first and second occurrence.
+32) case4: updating the given element with new element in all occurrences.

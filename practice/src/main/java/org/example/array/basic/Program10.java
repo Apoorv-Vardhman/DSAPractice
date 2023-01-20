@@ -1,4 +1,4 @@
-package org.example.array;
+package org.example.array.basic;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ import java.util.Scanner;
  * @LinkedIn : apoorv-vardhman
  **/
 /*
-* 2) Sum of all elements present in an array
+* 10) max element in an array
 * */
-public class Program2 {
+public class Program10 {
     public static void main(String[] args) {
         System.out.print("Enter size ");
         Scanner scanner = new Scanner(System.in);
@@ -20,10 +20,12 @@ public class Program2 {
             System.out.println("enter "+(i+1)+" element ");
             array[i] = scanner.nextInt();
         }
-        int sum =0;
-        for(var a: array){
-            sum+=a;
+        int max = array[0];
+        for (int j : array) {
+            if (max < j) {
+                max = j;
+            }
         }
-        System.out.printf("sum "+sum);
+        System.out.printf("max "+max);
     }
 }

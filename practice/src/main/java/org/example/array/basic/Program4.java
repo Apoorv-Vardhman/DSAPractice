@@ -1,4 +1,4 @@
-package org.example.array;
+package org.example.array.basic;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ import java.util.Scanner;
  * @LinkedIn : apoorv-vardhman
  **/
 /*
-* 11) min element in an array
+* 4) sum of odd numbers
 * */
-public class Program11 {
+public class Program4 {
     public static void main(String[] args) {
         System.out.print("Enter size ");
         Scanner scanner = new Scanner(System.in);
@@ -20,12 +20,12 @@ public class Program11 {
             System.out.println("enter "+(i+1)+" element ");
             array[i] = scanner.nextInt();
         }
-        int max = array[0];
-        for (int j : array) {
-            if (max > j) {
-                max = j;
+        int sum =0;
+        for(var a: array){
+            if(a%2!=0){
+                sum+=a;
             }
         }
-        System.out.printf("min "+max);
+        System.out.printf("sum "+sum);
     }
 }

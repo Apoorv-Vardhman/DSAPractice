@@ -1,4 +1,4 @@
-package org.example.array;
+package org.example.array.basic;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ import java.util.Scanner;
  * @LinkedIn : apoorv-vardhman
  **/
 /*
-* 5) sum of +ve elements in an array----------------------> if(item>=0)
+* 11) min element in an array
 * */
-public class Program5 {
+public class Program11 {
     public static void main(String[] args) {
         System.out.print("Enter size ");
         Scanner scanner = new Scanner(System.in);
@@ -20,12 +20,12 @@ public class Program5 {
             System.out.println("enter "+(i+1)+" element ");
             array[i] = scanner.nextInt();
         }
-        int sum =0;
-        for(var a: array){
-            if(a>=0){
-                sum+=a;
+        int max = array[0];
+        for (int j : array) {
+            if (max > j) {
+                max = j;
             }
         }
-        System.out.printf("sum "+sum);
+        System.out.printf("min "+max);
     }
 }
