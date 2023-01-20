@@ -14,6 +14,14 @@ Arrays:
     ~~~~~~~~~~~~~~~~~~~~~~~
     [3, 1, 5, 2, 4] sort in asc order ----> [1, 2, 3, 4, 5]
     [3, 1, 5, 2, 4] sort in desc order ---> [5, 4, 3, 2, 1]
+13) sort the array asc ---> a ---> 1stsmall, 2nd small, 3rd small, .....2nd max, 1st max
+
+    1st max ------> a[n-1]         1st min -------> a[1-1]
+    2nd max ------> a[n-2]         2nd min -------> a[2-1]
+    3rd max ------> a[n-3]         3rd min -------> a[3-1]
+
+    kth max ------> a[n-k]         kth min -------> a[k-1]
+14) searching ----> linear
 15) equality of arrays:-
     ~~~~~~~~~~~~~~~~~~~
     case1: by checking manually
