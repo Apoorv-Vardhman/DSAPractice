@@ -1,0 +1,20 @@
+33) Print char and corresponding index value?
+34) Print char and corresponding index value which are present at even indexed loc?
+35) Print char and corresponding index value which are present at odd indexed loc?
+36) Print vowels present in the given string
+37) print consonants present in the given string
+38) count number of vowels in string
+39) count number of consonants in string
+40) sort all characters present in the given string in asc order?
+41) sort all characters present in the given string in desc order?
+42) check whether two strings are anagrams or not?
+43) read a string separated by , and fetch data one by one
+44) read a sentence and reverse the total given sentence
+45) read a string and reverse and individual words
+46) read a string and reverse alternative words
+47) read a string and reverse even length words
+48) read a string and reverse odd length words
+49) read a string and convert every word first char into caps
+50) read a string and convert every word first and last char into caps
+51) read a string and except first and last char remaining into upper case
+

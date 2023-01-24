@@ -1,0 +1,628 @@
+String Data Structure:-
+~~~~~~~~~~~~~~~~~~~~~~
+01. Introduction to Strings
+02. Mutablitity and Immutablity
+03. Heap and SCP memory areas
+04. String class constructors and methods
+05. StringBuffer class constructors and methods
+06. StringBuilder class constructors and methods
+07. StringBuffer vs StringBuilder
+08. StringTokenizer
+09. Programs on String
+10. Programs on StringBuffer and StringBuilder
+11. Progrmas on StringTokenizer
+12. Regular Expressions and its applications
+
+Introduction:
+-------------
+1) 99% of data in any application is string only.
+
+Ex:
+---
+	voter management system
+
+	vid
+	name
+	fname
+	mname
+	address
+	emailid
+	mbl
+	zipcode
+	dist
+	state
+	etc
+
+	name,fname,mname,address,emailid,dist,state etc
+
+2) string is an object.
+3) string is a collection or group of characters.
+4) in java strings are divided into the following four groups.
+
+	1. String
+	2. StringBuffer
+	3. StringBuilder
+	4. StringTokenizer
+
+5) all these objects are almost same with small differences.
+
+	String      ----> java.lang.String
+	StringBuffer ---> java.lang.StringBuffer
+	StringBuilder --> java.lang.StringBuilder
+	StringTokenizer-> java.util.StringTokenizer
+
+String Constant Pool and SCP memory areas w.r.t Strings:-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Once if a string object is created, java creates that string obj in string constant pool, the main advantage of this approach is reusability.
+
+Ex:
+---
+	String s1 = "abc";
+	String s2 = "abc";
+	String s3 = "abc";
+
+	no. of string objects ----> 1
+
+Ex:
+---
+	String s1 = new String("abc");
+	String s2 = new String("abc");
+	String s3 = new String("abc");
+
+	no. of string objects -----> 3(heap) +1(scp) = 4 objects
+
+
+String
+------
+constructors:
+-------------
+1) String()              ----> to create an empty string obj
+2) String(StringLiteral) ----> it create a string obj with given literal
+3) String(char[]) -----------> create str obj with given char[]
+4) String(char[],int,int) ---> create str obj with given char[] from start to num of ch
+5) String(int[],int,int) ----> create str obj with given int[] from start to num of int
+6) String(byte[]) -----------> create str obj with byte[]
+7) String(StringBuffer) -----> create str obj with string buffer obj
+8) String(StringBuilder) ----> create str obj with string builder obj
+
+methods:
+--------
+int length() ---> returns num of char present in the given string
+boolean isEmpty(); --> return true if the given contains empty literal
+char charAt(int index); --> return char present at given index
+boolean startsWith(str); ---> returns true if given str starts with sub-str
+boolean endsWith(str); ---> returns true if given str ends with sub-str
+char[] toCharArray();---> converts given str into char[]
+byte[] getBytes(); ----> converts given str into byte[]
+boolean equals(str);
+boolean equalsIgnoreCase(str);
+int indexOf(char) ---> returns index of first occurrent of that char
+int lastIndexOf(char) ---> returns index of last occurrent of that char
+int compareTo(Str) ----> it compare two str based on ascii values
+int compareToIgnoreCase(Str) ----> it compare two str based on ascii values
+String substring(begin_index);
+String substring(begin_index,end_index);
+boolean contains(str)
+String concat(str) => it is used to concatenation of two strings
+String replace(old_c,new_c) ==> it replaces old char with new char
+String toUpperCase() ===> it converts each char into upper case
+String toLowerCase() ===> it converts each char into lower case
+String[] split(delimiter) ===> based on given delimiter it split the given string
+
+------------------------------------------------------------------------------------------------------------
+java.lang.StringBuffer:
+------------------------------------------------------------------------------------------------------------
+=> it is a group of characters.
+=> it is mutable object, i.e. modifications are allowed.
+=> 1.0 version (legacy)
+=> allow only single thread to operate (single thread based application)
+=> storing results in the university result db. (StringBuffer).
+=> every method is synchronized.
+
+Ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		String s = new String("welcome ");
+		s.concat("python");
+		System.out.println(s);//welcome
+	}
+}
+
+output:
+-------
+welcome
+
+Ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		String s = new String("welcome ");
+		s=s.concat("python");
+		System.out.println(s);//welcome python
+	}
+}
+
+output:
+-------
+welcome python
+
+Ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		StringBuffer sb = new StringBuffer("welcome ");
+		sb.append("java");
+		System.out.println(sb);//welcome java
+	}
+}
+
+output:
+-------
+welcome java
+
+
+------------------------------------------------------------------------------------------------------------
+java.lang.StringBuilder:
+------------------------------------------------------------------------------------------------------------
+=> it is a group of characters.
+=> it is mutable object, i.e. modifications are allowed.
+=> 1.5 version (not legacy)
+=> allow multiple threads to operate (multi threaded based application)
+=> retriving results from the university result db. (StringBuilder).
+=> every method is non-synchronozed.
+
+Ex:
+---
+	synchronized void insertData(123,99){
+		---------------
+		---------------
+	}
+
+	void ReadData(123){
+		---------------
+		---------------
+	}
+
+all the methods and constructors are same in StringBuffer and StringBuilder
+
+construction of string buffer objects:-
+--------------------------------------
+1) StringBuffer(); -------> an empty string buffer obj with 16 as default capacity
+2) StringBuffer(int); ----> an empty sb obj with given capacity
+3) StringBuffer(str); ----> a sb obj with given string (capacity: 16+len of str)
+
+Ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		StringBuffer sb1 = new StringBuffer();
+		StringBuffer sb2 = new StringBuffer(100);
+		StringBuffer sb3 = new StringBuffer("abc");
+		System.out.println(sb1.capacity());//16
+		System.out.println(sb2.capacity());//100
+		System.out.println(sb3.capacity());//16+3=19
+	}
+}
+
+output:
+-------
+16
+100
+19
+
+Ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		StringBuffer sb = new StringBuffer();
+
+		sb.append("abcdefghijklmnop");
+		System.out.println(sb);//abcdefghijklmnop
+		System.out.println(sb.capacity());//16
+
+		sb.append("q");
+		System.out.println(sb);//abcdefghijklmnopq
+		//new capcaity = (old capacity+1)*2
+		System.out.println(sb.capacity());//(16+1)*2=17*2=34
+	}
+}
+
+output:
+-------
+abcdefghijklmnop
+16
+abcdefghijklmnopq
+34
+
+methods:
+--------
+int length()         -----------> return number of characters present
+int capacity()         ---------> return max number of characters are allowed
+void setLength(int) -        ---> set the string buffer length
+void trimToSize() -        -----> remove unwanted spaces
+void ensureCapacity(int)     ---> to increase capacity of sb
+char charAt(int)      ----------> return char present at the given location
+void setCharAt(int,char)     ---> it replaces char present given location with new char
+StringBuffer append(obj)     ---> it inserts the given obj at the end of sb
+StringBuffer insert(int,obj) ---> it inserts the given obj at the given location in sb
+StringBuffer delete(start,end) -> it removes characters present from start to end-1
+StringBuffer reverse() ---------> it reverse the content of sb
+
+Ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		StringBuffer sb = new StringBuffer("abcdefg");
+		System.out.println(sb);//abcdefg
+		System.out.println(sb.charAt(0));//a
+		System.out.println(sb.charAt(1));//b
+		sb.setCharAt(1,'W');
+		System.out.println(sb);//aWcdefg
+		sb.deleteCharAt(3);
+		System.out.println(sb);//aWcefg
+	}
+}
+
+output:
+-------
+abcdefg
+a
+b
+aWcdefg
+aWcefg
+
+
+------------------------------------------------------------------------------------------------------------
+java.util.StringTokenizer
+------------------------------------------------------------------------------------------------------------
+=> it is an utility provided by java.util package.
+=> it divides the string into tokens
+
+"java is very easy" -----> ["java","is","very","easy"]
+"19-12-2022" ------------> ["19","12","2022"]
+"05:51" -----------------> ["05","51"]
+
+StringTokenizer st = new StringTokenizer(string,delimiter); //default del is ' '
+
+int countTokens() --------> return number of tokens
+boolean hasMoreTokens() --> return true if there is token
+String nextToken() -------> return current token and transfer the control to next token as string
+Object nextElement() -----> return current token and transfer the control to next token as object(same as nextToken except return type is object)
+
+content comparison and reference comparison:
+----------------------------------------------
+primitives and objects
+
+primitives -----> == operator for content comparison
+
+objects -------->
+
+				== reference comparison
+				.equals() reference comparison
+
+Ex:
+---
+import java.util.*;
+
+class Demo{
+
+}
+class Test
+{
+	public static void main(String[] args)
+	{
+		Demo d1 = new Demo();
+		Demo d2 = new Demo();
+		Demo d3;
+		d3=d1;
+
+		System.out.println(d1==d2);//false
+		System.out.println(d1.equals(d2));//false
+
+		System.out.println(d1==d3);//true
+		System.out.println(d1.equals(d3));//true
+	}
+}
+
+output:
+-------
+false
+false
+true
+true
+
+
+String objects -------->
+
+				== reference comparison
+				.equals() content comparison
+
+.equals() method present in java.lang.Object class, java.lang.String has override this method for content comparison.
+
+Ex:
+---
+import java.util.*;
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		String s1 = new String("abc");
+		String s2 = new String("abc");
+		String s3 = s1;
+
+		System.out.println(s1==s2);//false
+		System.out.println(s1.equals(s2));//true
+
+		System.out.println(s1==s3);//true
+		System.out.println(s1.equals(s3));//true
+	}
+}
+
+output:
+-------
+false
+true
+true
+true
+
+StringBuffer objects -------->
+
+				== reference comparison
+				.equals() reference comparison
+
+.equals() method present in java.lang.Object class, java.lang.String has override this method for content comparison and
+java.lang.StringBuffer has not overridden this method, hence for StringBuffer objects == and .equals() are same.
+
+Ex:
+---
+import java.util.*;
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		StringBuffer sb1 = new StringBuffer("abc");
+		StringBuffer sb2 = new StringBuffer("abc");
+		StringBuffer sb3 = sb1;
+
+		System.out.println(sb1==sb2);//false
+		System.out.println(sb1.equals(sb2));//false
+
+		System.out.println(sb1==sb3);//true
+		System.out.println(sb1.equals(sb3));//true
+	}
+}
+
+output:
+-------
+false
+false
+true
+true
+
+SCP and Heap Area
+-----------------
+Object creation in SCP is always optional, if an object is already existed, it won't create any new object. In the case new
+keyword every time a new object will be created in heap area.
+
+Ex1:
+----
+String s = new String("prakash");
+
+heap ---> 1
+scp ----> 1
+total --> 2
+
+Ex2:
+----
+String s = "prakash";
+
+heap ---> 0
+scp ----> 1
+total --> 1
+
+Ex3:
+----
+String s1 = new String("abc");
+String s2 = new String("abc");
+String s3 = "abc";
+String s4 = "abc";
+
+heap ---> 2
+scp ----> 1
+total --> 3
+
+Ex4:
+----
+String s = new String("abc");
+s.concat("pqr");
+s=s.concat("wxyz");
+
+heap ---> 3
+scp ----> 3
+total --> 6
+
+Ex5:
+----
+String s1 = new String("spring");
+s1.concat("fall");
+String s2 = s1.concat("winter");
+s2.concat("summer");
+
+heap ---> 4
+scp ----> 4
+total --> 8
+
+
+Ex6:
+----
+String s1 = "abc";
+String s2 = s1.toUpperCase();
+String s3 = s1.toLowerCase();
+
+s1==s2 ----> false
+s1==s3 ----> true
+
+scp ----> 2
+heap ---> 0
+total --> 2
+
+Ex7:
+----
+String s1 = "abc";
+String s2 = s1.toString();
+
+s1==s2 ----> true
+
+heap ----> 0
+scp -----> 1
+total ---> 1
+
+Ex8:
+----
+String s1 = new String("abc");
+String s2 = s1.toString();
+
+s1==s2 ----> false
+
+heap ----> 1
+scp -----> 1
+total ---> 2
+
+Note:
+-----
+1) because of runtime operation if there is a change in the content with those changes a new object will be created only on heap area but not on scp area.
+
+2) if there is no change in the content no new object will be created the same obj will be reused. this rule is applicable whether the obj is present in SCP or HEAP.
+
+Ex9:
+----
+		String s1 = new String("abc");
+		String s2 = s1.toString();
+		String s3 = s1.toUpperCase();
+		String s4 = s1.toLowerCase();
+		String s5 = s1.toUpperCase();
+		String s6 = s3.toLowerCase();
+
+heap ----> 4
+scp -----> 1
+total ---> 5
+
+Ex:
+---
+import java.util.*;
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		String s1 = new String("abc");
+		String s2 = s1.toString();
+		String s3 = s1.toUpperCase();
+		String s4 = s1.toLowerCase();
+		String s5 = s1.toUpperCase();
+		String s6 = s3.toLowerCase();
+		System.out.println(s3==s5);//false
+		System.out.println(s1==s6);//false
+		System.out.println(s1==s2);//true
+		System.out.println(s1==s4);//true
+	}
+}
+
+Ex10:
+-----
+String s1 = new String("i love my india");
+String s2 = new String("i love my india");
+System.out.println(s1==s2);
+String s3 = "i love my india";
+System.out.println(s1==s3);
+String s4 = "i love my india";
+System.out.println(s3==s4);
+String s5 = "i love "+"my india";
+System.out.println(s4==s5);
+String s6 = "i love ";
+String s7 = s6+"my india";
+System.out.println(s4==s7);
+final String s8 = "i love ";
+String s9 = s8+"my india";
+System.out.println(s4==s9);
+
+heap ------> 3
+scp -------> 3
+total -----> 6
+
+Ex:
+---
+import java.util.*;
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		String s1 = new String("i love my india");
+		String s2 = new String("i love my india");
+		System.out.println(s1==s2);//false
+		String s3 = "i love my india";
+		System.out.println(s1==s3);//false
+		String s4 = "i love my india";
+		System.out.println(s3==s4);//true
+		String s5 = "i love "+"my india";
+		System.out.println(s4==s5);//true
+		String s6 = "i love ";
+		String s7 = s6+"my india";
+		System.out.println(s4==s7);//false
+		final String s8 = "i love ";
+		String s9 = s8+"my india";
+		System.out.println(s4==s9);//true
+	}
+}
+
+Interning of String objects:
+----------------------------
+Ex:
+---
+import java.util.*;
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		String s1 = new String("abc");
+		String s2 = s1.intern();
+		String s3 = "abc";
+
+		System.out.println(s2==s1);//false
+		System.out.println(s2==s3);//true
+	}
+}
+
+Ex:
+---
+import java.util.*;
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		String s1 = new String("abc");
+		String s2 = s1.concat("def");
+		String s3 = s2.intern();
+		String s4 = "abcdef";
+
+		System.out.println(s3==s4);//true
+	}
+}

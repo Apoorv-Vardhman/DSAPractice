@@ -1,0 +1,6 @@
+#1. String is immutable but StringBuilder and StringBuffer are mutable
+#2. Every immutable object in java is thread safe, so String is thread safe but StringBuilder is not thread safe(multithreaded)
+    StringBuffer is thread safe(single threaded)
+    StringBuffer is single threaded but StringBuilder is multithreaded
+#3. StringBuffer is available from version 1.0 (legacy) but StringBuilder is from 1.5 version(not legacy)
+#4. StringBuffer has every method is synchronized but StringBuilder has every method is non-synchronized
